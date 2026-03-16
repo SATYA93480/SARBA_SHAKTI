@@ -33,6 +33,54 @@
 <!-- RTL CSS::When Need RTL Uncomments File -->
 <!-- <link rel="stylesheet" type="text/css" href="assets/css/rtl.css"> -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+<style>
+  /* About page: keep the volunteer carousel mobile-friendly */
+  @media (max-width: 767px) {
+    .team-section.impact-carousel {
+      padding: 40px 0;
+    }
+    .team-section.impact-carousel .impact-carousel-track {
+      gap: 16px;
+      flex-direction: column;
+      align-items: center;
+      overflow: visible;
+    }
+    .team-section.impact-carousel .impact-slide {
+      position: relative;
+      width: 100%;
+      max-width: 420px;
+      height: clamp(210px, 60vw, 280px);
+      opacity: 1;
+      transform: none;
+    }
+    .team-section.impact-carousel .impact-slide {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 12px;
+      height: auto;
+    }
+    .team-section.impact-carousel .impact-slide img {
+      width: 45%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      border-radius: 12px;
+    }
+    .team-section.impact-carousel .impact-slide-text {
+      width: 55%;
+    }
+    .team-section.impact-carousel .impact-texts {
+      display: none;
+      min-height: 120px;
+      padding: 0 12px;
+    }
+    .team-section.impact-carousel .impact-dots {
+      display: none;
+      margin-top: 12px;
+      flex-wrap: wrap;
+    }
+  }
+</style>
 </head>
 <body>
 <div class="loading-page" id="preloader-active">
@@ -260,12 +308,24 @@
 <div class="impact-carousel-track" id="impactCarousel">
 <article class="impact-slide impact-slide-1 is-left">
 <img alt="Impact image 1" src="assets/images/gallery/team-1.png"/>
+<div class="impact-slide-text">
+<p class="impact-title">Sonali Satapathy</p>
+<p class="impact-desc">Founder of Sonydig Technology Pvt Ltd</p>
+</div>
 </article>
 <article class="impact-slide impact-slide-2 is-center">
 <img alt="Impact image 2" src="assets/images/gallery/team-2.png"/>
+<div class="impact-slide-text">
+<p class="impact-title">Demo Title Two</p>
+<p class="impact-desc">Demo description for the second image.</p>
+</div>
 </article>
 <article class="impact-slide impact-slide-3 is-right">
 <img alt="Impact image 3" src="assets/images/gallery/team-3.png"/>
+<div class="impact-slide-text">
+<p class="impact-title">Demo Title Three</p>
+<p class="impact-desc">Demo description for the third image.</p>
+</div>
 </article>
 </div>
 <div class="impact-texts">
