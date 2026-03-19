@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+        content="These template is suitable for charity , NGO , non-profit organization , donation , church or a fundraising website."
+        name="description" />
+    <meta
+        content="charity, causes, donate, charity foundation, charity hub, charity theme, donations, non profit, fundraiser,social, ngo, non-profit, nonprofit, organization, volunteer"
+        name="keywords" />
+    <meta content="initTheme" name="author" />
+    <meta content="website" property="og:type" />
+    <meta content="Sarba Shakti Educational &amp; Charitable Trust" property="og:title" />
+    <meta content="donate Website" property="og:site_name" />
+    <meta content="Sarba Shakti Educational &amp; Charitable Trust" property="og:site_name" />
+    <meta content="/" property="og:url" />
+    <meta content="/assets/images/hero/hero-1.png" property="og:image" />
+    <meta content="These template is suitable for charity , NGO ,donate,fundraiser, non-profit organization"
+        property="og:description" />
+    <meta content="Sarba Shakti Educational &amp; Charitable Trust" name="twitter:title" />
+    <meta content="These template is suitable for charity , NGO ,donate,fundraiser, non-profit organization"
+        name="twitter:description" />
+    <meta content="/assets/images/hero/hero-1.png" name="twitter:image" />
+    <meta content="summary" name="twitter:card" />
+    <title>Sarba Shakti Educational &amp; Charitable Trust</title>
+    <link href="assets/images/icon/favicon.png" rel="icon" sizes="20x20" type="image/x-icon" />
+    <!-- Page-only Layout (Bootstrap removed) -->
+    <!-- fonts & icon -->
+    <link href="assets/css/remixicon.css" rel="stylesheet" type="text/css" />
+    <!-- Plugin -->
+    <link href="assets/css/plugin.css" rel="stylesheet" type="text/css" />
+    <!-- Main CSS -->
+    <link href="assets/css/main-style.css" rel="stylesheet" type="text/css" />
+    <!-- RTL CSS::When Need RTL Uncomments File -->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/rtl.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+    <script>
+        if (typeof window.jQuery === "function") {
+            window.$ = window.jQuery;
+        }
+    </script>
+    <style>
+        :root {
+            --page-bg: #f6f4f0;
+            --ink: #1f1e1c;
+            --ink-soft: #5b544b;
+            --accent: #c25a2a;
+            --accent-dark: #9b4721;
+            --card: #ffffff;
+            --shadow: 0 18px 40px rgba(31, 30, 28, 0.12);
+            --radius: 18px;
+        }
+
+        body {
+            background: var(--page-bg);
+            color: var(--ink);
+        }
+
+        .container {
+            width: min(1200px, 92vw);
+            margin: 0 auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -12px;
+        }
+
+        .row > * {
+            padding: 12px;
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
+
+        .col-lg-7 {
+            flex: 0 0 58.333%;
+            max-width: 58.333%;
+        }
+
+        .col-lg-5 {
+            flex: 0 0 41.667%;
+            max-width: 41.667%;
+        }
+
+        .col-lg-12,
+        .col-xl-12 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .align-items-center {
+            align-items: center;
+        }
+
+        .justify-content-between {
+            justify-content: space-between;
+        }
+
+        .d-none {
+            display: none;
+        }
+
+        .d-block {
+            display: block;
+        }
+
+        .gy-24 {
+            row-gap: 24px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        @media (max-width: 991px) {
+            .col-lg-7,
+            .col-lg-5 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+
+            .d-lg-block {
+                display: none;
+            }
+
+            .d-lg-none {
+                display: block;
+            }
+        }
+
+        .breadcrumb-section {
+            background: linear-gradient(135deg, #1f1e1c, #3c332c);
+            color: #fff;
+            padding: 80px 0 70px;
+        }
+
+        .breadcrumb-section .title {
+            color: #fff;
+        }
+
+        .breadcrumb .single {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .image-gallery-page {
+            padding: 72px 0 90px;
+        }
+
+        .gallery-masonry {
+            columns: 3;
+            column-gap: 20px;
+        }
+
+        .gallery-card {
+            break-inside: avoid;
+            background: var(--card);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .gallery-card img {
+            width: 100%;
+            display: block;
+        }
+
+        .gallery-card-content {
+            padding: 18px 20px 22px;
+        }
+
+        .gallery-card-content h3 {
+            font-size: 1.05rem;
+            margin: 0 0 8px;
+        }
+
+        .gallery-card-content p {
+            color: var(--ink-soft);
+            margin: 0;
+        }
+
+        .gallery-cta {
+            padding: 0 0 90px;
+        }
+
+        .gallery-cta-inner {
+            background: #fff;
+            border-radius: 20px;
+            padding: 28px 32px;
+            box-shadow: var(--shadow);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .btn-primary-fill {
+            background: var(--accent);
+            color: #fff !important;
+            border-radius: 999px;
+            padding: 12px 22px;
+            display: inline-block;
+        }
+
+        .btn-primary-fill:hover {
+            background: var(--accent-dark);
+        }
+
+        @media (max-width: 991px) {
+            .gallery-masonry {
+                columns: 2;
+            }
+
+            .gallery-cta-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .gallery-masonry {
+                columns: 1;
+            }
+        }
+
+        #preloader-active {
+            transition: opacity 0.6s ease, visibility 0.6s ease;
+        }
+
+        #preloader-active.preloader-hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .news-lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            z-index: 1055;
+        }
+
+        .news-lightbox.open {
+            display: flex;
+        }
+
+        .news-lightbox-inner {
+            background: #ffffff;
+            border-radius: 12px;
+            max-width: 92vw;
+            max-height: 90vh;
+            width: min(900px, 92vw);
+            padding: 16px 16px 20px;
+            position: relative;
+            overflow: auto;
+        }
+
+        .news-lightbox-title {
+            margin: 0 0 12px;
+            font-size: 1.1rem;
+            line-height: 1.4;
+        }
+
+        .news-lightbox-image {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-height: 70vh;
+            object-fit: contain;
+        }
+
+        .news-lightbox-close {
+            position: absolute;
+            top: 10px;
+            right: 12px;
+            border: none;
+            background: transparent;
+            font-size: 24px;
+            line-height: 1;
+            cursor: pointer;
+        }
+
+        .news-image-trigger {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loading-page" id="preloader-active">
+        <div class="counter">
+            <p class="text text-capitalize">loading</p>
+            <span class="number">0%</span>
+            <span class="line"></span>
+        </div>
+    </div>
+    <header>
+        <div class="header-area">
+            <div class="main-header header-sticky">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="menu-wrapper d-flex align-items-center justify-content-between">
+                                <div class="header-left d-flex align-items-center justify-content-between">
+                                    <!-- Logo-->
+                                    <div class="logo logo-large light-logo">
+                                        <a href="index.html"><img alt="Sarba Shakti Educational &amp; Charitable Trust logo"
+                                                src="assets/images/logo/logo.png" /></a>
+                                    </div>
+                                    <!-- Logo Mobile-->
+                                    <div class="logo logo-mobile light-logo">
+                                        <a href="index.html"><img alt="img" src="assets/images/icon/favicon.png" /></a>
+                                    </div>
+                                </div>
+                                <div class="search-container">
+                                    <input class="search-field" id="searchField" placeholder="Search..." type="text" />
+                                    <button class="close-search-btn" id="closeSearch"><i
+                                            class="ri-close-line"></i></button>
+                                </div>
+                                <!-- Main-menu for desktop -->
+                                <div class="main-menu d-none d-lg-block">
+                                    <nav>
+                                        <ul class="listing" id="navigation">
+                                            <li class="single-list">
+                                                <a class="single" href="index.html">Home</a>
+                                            </li>
+                                            <li class="single-list"><a class="single" href="about.html">About</a></li>
+
+                                            </li>
+                                            <li class="single-list"><a class="single" href="blog.html">Blog</a></li>
+                                            <li class="single-list"><a class="single"
+                                                    href="volunteer.html">Volunteer</a></li>
+                                            <li class="single-list dropdown">
+                                                <a class="single dropdown-toggle active" href="#" data-bs-toggle="dropdown">
+                                                    Media
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="image-gallery.html">Image
+                                                            Gallery</a></li>
+                                                    <li><a class="dropdown-item" href="video-gallery.html">Video
+                                                            Gallery</a></li>
+                                                    <li><a class="dropdown-item" href="news-media.html">News &
+                                                            Press</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="single-list"><a class="single" href="contact-us.html">Contact</a>
+                                            </li>
+                                        </ul>
+
+                                    </nav>
+                                </div>
+                                <div class="header-right">
+                                    <div class="cart">
+                                        <!-- search button -->
+                                        <a class="rounded-btn search-bar" href="javascript:void(0)"><i
+                                                class="ri-search-line"></i></a>
+                                        <a class="btn-primary-fill pill-btn" href="auth/login.html">Log in</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mobile Menu -->
+                            <div class="div">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Breadcrumb Area S t a r t -->
+        <section class="breadcrumb-section breadcrumb-bg">
+            <div class="container">
+                <div class="breadcrumb-text">
+                    <nav aria-label="breadcrumb" class="breadcrumb-nav wow fadeInUp" data-wow-delay="0.0s">
+                        <ul class="breadcrumb listing">
+                            <li class="breadcrumb-item single-list"><a class="single" href="index.html">Home</a></li>
+                            <li aria-current="page" class="breadcrumb-item single-list"><a class="single"
+                                    href="javascript:void(0)">News &amp; Press</a></li>
+                        </ul>
+                    </nav>
+                    <h1 class="title wow fadeInUp" data-wow-delay="0.1s">News &amp; Press</h1>
+                </div>
+            </div>
+        </section>
+
+        <div class="news-lightbox" id="newsLightbox" aria-hidden="true">
+            <div class="news-lightbox-inner" role="dialog" aria-modal="true" aria-labelledby="newsLightboxTitle">
+                <button class="news-lightbox-close" type="button" aria-label="Close">&times;</button>
+                <h5 class="news-lightbox-title" id="newsLightboxTitle">News Image</h5>
+                <img class="news-lightbox-image" id="newsLightboxImage" src="assets/images/gallery/paper1.jpg"
+                    alt="News image preview" />
+            </div>
+        </div>
+        <!-- End-of Breadcrumb Area -->
+
+        <section class="image-gallery-page section-padding">
+            <div class="container">
+                <div class="row align-items-end gy-24">
+                    <div class="col-lg-7">
+                        <div class="section-tittle">
+                            <span class="sub-tittle text-capitalize font-600">Media Highlights</span>
+                            <h2 class="title font-700">Coverage, press releases, and stories from our community work</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-masonry">
+                    <article class="gallery-card">
+                        <button class="news-image-trigger" type="button" data-image="assets/images/gallery/paper1.jpg"
+                            data-title="Community health camp reaches 1,200 residents"
+                            style="border: none; padding: 0; background: transparent; width: 100%; text-align: left;">
+                            <img alt="Press briefing" src="assets/images/gallery/paper1.jpg" />
+                        </button>
+                        <div class="gallery-card-content">
+                            <h3>Community health camp reaches 1,200 residents</h3>
+                            <p>Local clinics partner with Sarba Shakti for weekend screenings.</p>
+                        </div>
+                    </article>
+                    <article class="gallery-card">
+                        <button class="news-image-trigger" type="button" data-image="assets/images/gallery/paper2.jpg"
+                            data-title="District daily highlights after-school learning labs"
+                            style="border: none; padding: 0; background: transparent; width: 100%; text-align: left;">
+                            <img alt="Education partnership news" src="assets/images/gallery/paper2.jpg" />
+                        </button>
+                        <div class="gallery-card-content">
+                            <h3>District daily highlights after-school learning labs</h3>
+                            <p>Students share how the program improves attendance and confidence.</p>
+                        </div>
+                    </article>
+                    <article class="gallery-card">
+                        <button class="news-image-trigger" type="button" data-image="assets/images/gallery/paper3.jpg"
+                            data-title="Volunteer leaders recognized for service excellence"
+                            style="border: none; padding: 0; background: transparent; width: 100%; text-align: left;">
+                            <img alt="Volunteer spotlight" src="assets/images/gallery/paper3.jpg" />
+                        </button>
+                        <div class="gallery-card-content">
+                            <h3>Volunteer leaders recognized for service excellence</h3>
+                            <p>Stories of mentorship and neighborhood leadership.</p>
+                        </div>
+                    </article>
+                    <article class="gallery-card">
+                        <button class="news-image-trigger" type="button" data-image="assets/images/gallery/paper4.jpg"
+                            data-title="New mobile clinic route expands to rural blocks"
+                            style="border: none; padding: 0; background: transparent; width: 100%; text-align: left;">
+                            <img alt="Program launch announcement" src="assets/images/gallery/paper4.jpg" />
+                        </button>
+                        <div class="gallery-card-content">
+                            <h3>New mobile clinic route expands to rural blocks</h3>
+                            <p>Weekly schedules published with updated service points.</p>
+                        </div>
+                    </article>
+                    <article class="gallery-card">
+                        <button class="news-image-trigger" type="button" data-image="assets/images/gallery/paper1.jpg"
+                            data-title="Youth digital literacy drive earns regional award"
+                            style="border: none; padding: 0; background: transparent; width: 100%; text-align: left;">
+                            <img alt="Youth program coverage" src="assets/images/gallery/paper1.jpg" />
+                        </button>
+                        <div class="gallery-card-content">
+                            <h3>Youth digital literacy drive earns regional award</h3>
+                            <p>Highlighting student projects and community mentors.</p>
+                        </div>
+                    </article>
+                    <article class="gallery-card">
+                        <button class="news-image-trigger" type="button" data-image="assets/images/gallery/paper2.jpg"
+                            data-title="Relief supplies delivered to 15 villages"
+                            style="border: none; padding: 0; background: transparent; width: 100%; text-align: left;">
+                            <img alt="Relief update" src="assets/images/gallery/paper2.jpg" />
+                        </button>
+                        <div class="gallery-card-content">
+                            <h3>Relief supplies delivered to 15 villages</h3>
+                            <p>Emergency response teams supported by local donors.</p>
+                        </div>
+                    </article>
+                    <article class="gallery-card">
+                        <button class="news-image-trigger" type="button" data-image="assets/images/gallery/paper3.jpg"
+                            data-title="Women leaders forum hosted with civic partners"
+                            style="border: none; padding: 0; background: transparent; width: 100%; text-align: left;">
+                            <img alt="Women leadership program" src="assets/images/gallery/paper3.jpg" />
+                        </button>
+                        <div class="gallery-card-content">
+                            <h3>Women leaders forum hosted with civic partners</h3>
+                            <p>Focus on safety, livelihoods, and community action.</p>
+                        </div>
+                    </article>
+                    <article class="gallery-card">
+                        <button class="news-image-trigger" type="button" data-image="assets/images/gallery/paper4.jpg"
+                            data-title="Community safety training expands to 9 new wards"
+                            style="border: none; padding: 0; background: transparent; width: 100%; text-align: left;">
+                            <img alt="Safety training report" src="assets/images/gallery/paper4.jpg" />
+                        </button>
+                        <div class="gallery-card-content">
+                            <h3>Community safety training expands to 9 new wards</h3>
+                            <p>Preparedness drills and first-aid workshops announced.</p>
+                        </div>
+                    </article>
+                    <article class="gallery-card">
+                        <button class="news-image-trigger" type="button" data-image="assets/images/gallery/paper1.jpg"
+                            data-title="CSR partner joins year-long education initiative"
+                            style="border: none; padding: 0; background: transparent; width: 100%; text-align: left;">
+                            <img alt="Partner announcement" src="assets/images/gallery/paper1.jpg" />
+                        </button>
+                        <div class="gallery-card-content">
+                            <h3>CSR partner joins year-long education initiative</h3>
+                            <p>Supporting scholarships and learning materials.</p>
+                        </div>
+                    </article>
+                    <article class="gallery-card">
+                        <button class="news-image-trigger" type="button" data-image="assets/images/gallery/paper2.jpg"
+                            data-title="Local newspaper spotlights youth engagement program"
+                            style="border: none; padding: 0; background: transparent; width: 100%; text-align: left;">
+                            <img alt="Press feature on youth" src="assets/images/gallery/paper2.jpg" />
+                        </button>
+                        <div class="gallery-card-content">
+                            <h3>Local newspaper spotlights youth engagement program</h3>
+                            <p>Creative learning sessions foster peer-led leadership.</p>
+                        </div>
+                    </article>
+                    <article class="gallery-card">
+                        <button class="news-image-trigger" type="button" data-image="assets/images/gallery/paper3.jpg"
+                            data-title="Mentor network expands for career guidance"
+                            style="border: none; padding: 0; background: transparent; width: 100%; text-align: left;">
+                            <img alt="Mentor program update" src="assets/images/gallery/paper3.jpg" />
+                        </button>
+                        <div class="gallery-card-content">
+                            <h3>Mentor network expands for career guidance</h3>
+                            <p>Professionals volunteer for monthly coaching clinics.</p>
+                        </div>
+                    </article>
+                    <article class="gallery-card">
+                        <button class="news-image-trigger" type="button" data-image="assets/images/gallery/paper4.jpg"
+                            data-title="Community celebration marks program milestone"
+                            style="border: none; padding: 0; background: transparent; width: 100%; text-align: left;">
+                            <img alt="Community celebration media" src="assets/images/gallery/paper4.jpg" />
+                        </button>
+                        <div class="gallery-card-content">
+                            <h3>Community celebration marks program milestone</h3>
+                            <p>Media gallery from the annual community gathering.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-cta">
+            <div class="container">
+                <div class="gallery-cta-inner">
+                    <div>
+                        <h2 class="title">Need more information or media assets?</h2>
+                        <p class="pera">Reach out for interviews, press kits, and collaboration details.</p>
+                    </div>
+                    <div class="gallery-cta-actions">
+                        <a class="btn-primary-fill" href="contact-us.html">Contact Communications</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer S t a r t -->
+    <footer>
+        <div class="footer-wrapper footer-bg-one">
+            <div class="footer-bottom-area">
+                <div class="container">
+                    <div class="footer-border">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="footer-copy-right text-center">
+                                    <p class="pera">Copyright &copy; 2026 Sonydig Technology. All rights reserved.</p>
+                                    <div class="footer-social-link">
+                                        <ul class="listing">
+                                            <li class="single-list">
+                                                <a class="single" href="index.html"><i class="ri-facebook-fill"></i></a>
+                                            </li>
+                                            <li class="single-list">
+                                                <a class="single" href="index.html"><i class="ri-youtube-fill"></i></a>
+                                            </li>
+                                            <li class="single-list">
+                                                <a class="single" href="index.html"><i
+                                                        class="ri-instagram-line"></i></a>
+                                            </li>
+                                            <li class="single-list">
+                                                <a class="single" href="index.html"><i class="ri-linkedin-fill"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!-- End-of Footer -->
+    <!-- Scroll Up  -->
+    <div class="progressParent rn-backto-top-active" id="back-top">
+        <svg class="backCircle svg-inner" height="100%" viewbox="-1 -1 102 102" width="100%">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+        </svg>
+    </div>
+    <!-- Add an overlay element -->
+    <div class="overlay"></div>
+    <!-- Plugin -->
+    <script src="assets/js/plugin.js"></script>
+    <script>
+        (function () {
+            var lightbox = document.getElementById("newsLightbox");
+            var image = document.getElementById("newsLightboxImage");
+            var title = document.getElementById("newsLightboxTitle");
+            if (!lightbox || !image) {
+                return;
+            }
+
+            var closeButton = lightbox.querySelector(".news-lightbox-close");
+
+            function openLightbox(src, heading) {
+                if (src) {
+                    image.src = src;
+                }
+                if (title) {
+                    title.textContent = heading || "";
+                }
+                lightbox.classList.add("open");
+                lightbox.setAttribute("aria-hidden", "false");
+                document.body.style.overflow = "hidden";
+            }
+
+            function closeLightbox() {
+                lightbox.classList.remove("open");
+                lightbox.setAttribute("aria-hidden", "true");
+                document.body.style.overflow = "";
+            }
+
+            document.addEventListener("click", function (event) {
+                var trigger = event.target.closest(".news-image-trigger");
+                if (!trigger) {
+                    return;
+                }
+                event.preventDefault();
+                openLightbox(
+                    trigger.getAttribute("data-image"),
+                    trigger.getAttribute("data-title")
+                );
+            });
+
+            if (closeButton) {
+                closeButton.addEventListener("click", closeLightbox);
+            }
+
+            lightbox.addEventListener("click", function (event) {
+                if (event.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+
+            document.addEventListener("keydown", function (event) {
+                if (event.key === "Escape") {
+                    closeLightbox();
+                }
+            });
+        })();
+    </script>
+    <!-- Preloader Fallback -->
+    <script>
+        (function () {
+            function hidePreloader() {
+                var preloader = document.getElementById("preloader-active");
+                if (preloader) {
+                    preloader.classList.add("preloader-hidden");
+                }
+            }
+
+            if (document.readyState === "complete") {
+                hidePreloader();
+            } else {
+                window.addEventListener("load", hidePreloader);
+                setTimeout(hidePreloader, 2500);
+            }
+        })();
+    </script>
+    <!-- Back To Top Fallback -->
+    <script>
+        (function () {
+            var backTop = document.getElementById("back-top");
+            if (!backTop) {
+                return;
+            }
+
+            backTop.classList.add("rn-backto-top-active");
+
+            var progressPath = backTop.querySelector("path");
+            var pathLength =
+                progressPath && typeof progressPath.getTotalLength === "function"
+                    ? progressPath.getTotalLength()
+                    : null;
+
+            if (pathLength) {
+                progressPath.style.transition = "none";
+                progressPath.style.strokeDasharray = pathLength + " " + pathLength;
+                progressPath.style.strokeDashoffset = pathLength;
+                progressPath.getBoundingClientRect();
+                progressPath.style.transition = "stroke-dashoffset 10ms linear";
+            }
+
+            var updateProgress = function () {
+                if (!pathLength) {
+                    return;
+                }
+                var scroll = window.pageYOffset || document.documentElement.scrollTop || 0;
+                var height =
+                    Math.max(
+                        document.documentElement.scrollHeight,
+                        document.body.scrollHeight
+                    ) - window.innerHeight;
+                var progress = height > 0 ? pathLength - (scroll * pathLength) / height : pathLength;
+                progressPath.style.strokeDashoffset = progress;
+            };
+
+            updateProgress();
+            window.addEventListener("scroll", updateProgress);
+
+            backTop.addEventListener("click", function (event) {
+                event.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        })();
+    </script>
+</body>
+
+</html>

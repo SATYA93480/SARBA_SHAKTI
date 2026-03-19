@@ -274,7 +274,7 @@
       slider - Gallery Area-active
     ----------------------------------------------*/
     if ($.fn.slick) {
-        $(".gallery-slider").slick({
+        $(".gallery-slider:not(.partners-slider)").slick({
             slidesToShow: 6,
             slidesToScroll: 1,
             autoplay: true,
@@ -762,3 +762,43 @@
     });
 
 })(window.jQuery || window.$);
+(function () {
+  "use strict";
+
+  function cloneTrack(track) {
+    if (!track || track.dataset.cloned === "true") {
+      return;
+    }
+
+    var items = Array.prototype.slice.call(track.children);
+    if (items.length === 0) {
+      return;
+    }
+
+    items.forEach(function (item) {
+      var clone = item.cloneNode(true);
+      clone.setAttribute("aria-hidden", "true");
+      track.appendChild(clone);
+    });
+
+    var duration = Math.max(18, items.length * 2.4);
+    track.style.setProperty("--partners-duration", duration + "s");
+    track.dataset.cloned = "true";
+  }
+
+  function initPartnersMarquee() {
+    var marquee = document.getElementById("partnersMarquee");
+    if (!marquee) {
+      return;
+    }
+
+    var track = marquee.querySelector(".partners-track");
+    cloneTrack(track);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initPartnersMarquee);
+  } else {
+    initPartnersMarquee();
+  }
+})();
