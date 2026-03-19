@@ -29,276 +29,208 @@
     <meta content="summary" name="twitter:card" />
     <title>Sarba Shakti Educational &amp; Charitable Trust</title>
     <link href="assets/images/icon/favicon.png" rel="icon" sizes="20x20" type="image/x-icon" />
-    <!-- Page-only Layout (Bootstrap removed) -->
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap-5.3.0.min.css" rel="stylesheet" type="text/css" />
     <!-- fonts & icon -->
     <link href="assets/css/remixicon.css" rel="stylesheet" type="text/css" />
     <!-- Plugin -->
     <link href="assets/css/plugin.css" rel="stylesheet" type="text/css" />
     <!-- Main CSS -->
     <link href="assets/css/main-style.css" rel="stylesheet" type="text/css" />
-    <!-- RTL CSS::When Need RTL Uncomments File -->
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/rtl.css"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
-    <script src="assets/js/jquery-3.7.0.min.js"></script>
-    <script>
-        if (typeof window.jQuery === "function") {
-            window.$ = window.jQuery;
-        }
-    </script>
     <style>
-        :root {
-            --page-bg: #f6f4f0;
-            --ink: #1f1e1c;
-            --ink-soft: #5b544b;
-            --accent: #c25a2a;
-            --accent-dark: #9b4721;
-            --card: #ffffff;
-            --shadow: 0 18px 40px rgba(31, 30, 28, 0.12);
-            --radius: 18px;
-        }
-
-        body {
-            background: var(--page-bg);
-            color: var(--ink);
-        }
-
-        .container {
-            width: min(1200px, 92vw);
-            margin: 0 auto;
-        }
-
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            margin: -12px;
-        }
-
-        .row > * {
-            padding: 12px;
-            flex: 1 1 100%;
-            max-width: 100%;
-        }
-
-        .col-lg-7 {
-            flex: 0 0 58.333%;
-            max-width: 58.333%;
-        }
-
-        .col-lg-5 {
-            flex: 0 0 41.667%;
-            max-width: 41.667%;
-        }
-
-        .col-lg-12,
-        .col-xl-12 {
-            flex: 0 0 100%;
-            max-width: 100%;
-        }
-
-        .d-flex {
-            display: flex;
-        }
-
-        .align-items-center {
-            align-items: center;
-        }
-
-        .justify-content-between {
-            justify-content: space-between;
-        }
-
-        .d-none {
-            display: none;
-        }
-
-        .d-block {
-            display: block;
-        }
-
-        .gy-24 {
-            row-gap: 24px;
-        }
-
-        .text-center {
-            text-align: center;
-        }
-
-        @media (max-width: 991px) {
-            .col-lg-7,
-            .col-lg-5 {
-                flex: 0 0 100%;
-                max-width: 100%;
-            }
-
-            .d-lg-block {
-                display: none;
-            }
-
-            .d-lg-none {
-                display: block;
-            }
-        }
-
-        .breadcrumb-section {
-            background: linear-gradient(135deg, #1f1e1c, #3c332c);
-            color: #fff;
-            padding: 80px 0 70px;
-        }
-
-        .breadcrumb-section .title {
-            color: #fff;
-        }
-
-        .breadcrumb .single {
-            color: rgba(255, 255, 255, 0.8);
-        }
-
-        .image-gallery-page {
-            padding: 72px 0 90px;
-        }
-
-        .gallery-masonry {
-            columns: 3;
-            column-gap: 20px;
-        }
-
-        .gallery-card {
-            break-inside: avoid;
-            background: var(--card);
-            border-radius: var(--radius);
-            box-shadow: var(--shadow);
-            overflow: hidden;
-            margin-bottom: 20px;
-        }
-
-        .gallery-card img {
-            width: 100%;
-            display: block;
-        }
-
-        .gallery-card-content {
-            padding: 18px 20px 22px;
-        }
-
-        .gallery-card-content h3 {
-            font-size: 1.05rem;
-            margin: 0 0 8px;
-        }
-
-        .gallery-card-content p {
-            color: var(--ink-soft);
-            margin: 0;
-        }
-
-        .gallery-cta {
-            padding: 0 0 90px;
-        }
-
-        .gallery-cta-inner {
-            background: #fff;
-            border-radius: 20px;
-            padding: 28px 32px;
-            box-shadow: var(--shadow);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 16px;
-        }
-
-        .btn-primary-fill {
-            background: var(--accent);
-            color: #fff !important;
-            border-radius: 999px;
-            padding: 12px 22px;
-            display: inline-block;
-        }
-
-        .btn-primary-fill:hover {
-            background: var(--accent-dark);
-        }
-
-        @media (max-width: 991px) {
-            .gallery-masonry {
-                columns: 2;
-            }
-
-            .gallery-cta-inner {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-        }
-
-        @media (max-width: 640px) {
-            .gallery-masonry {
-                columns: 1;
-            }
-        }
-
-        #preloader-active {
-            transition: opacity 0.6s ease, visibility 0.6s ease;
-        }
-
-        #preloader-active.preloader-hidden {
-            opacity: 0;
-            visibility: hidden;
+        .gallery-card::after {
             pointer-events: none;
         }
 
-        .news-lightbox {
-            position: fixed;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.8);
-            display: none;
-            align-items: center;
-            justify-content: center;
-            padding: 24px;
-            z-index: 1055;
+        .gallery-card-content {
+            pointer-events: none;
         }
 
-        .news-lightbox.open {
-            display: flex;
-        }
-
-        .news-lightbox-inner {
-            background: #ffffff;
-            border-radius: 12px;
-            max-width: 92vw;
-            max-height: 90vh;
-            width: min(900px, 92vw);
-            padding: 16px 16px 20px;
+        .news-trigger {
             position: relative;
-            overflow: auto;
-        }
-
-        .news-lightbox-title {
-            margin: 0 0 12px;
-            font-size: 1.1rem;
-            line-height: 1.4;
-        }
-
-        .news-lightbox-image {
-            display: block;
+            z-index: 3;
             width: 100%;
+            border: 0;
+            padding: 0;
+            background: transparent;
+            display: block;
+            text-align: left;
+        }
+
+        .news-trigger img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .image-gallery-page .gallery-card {
+            border-radius: 18px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .image-gallery-page .gallery-card-content {
+            min-height: 140px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        @media (max-width: 768px) {
+            .news-trigger img {
+                height: 200px;
+            }
+        }
+
+        .news-meta {
+            margin-top: 10px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #0b6b56;
+            display: inline-flex;
+            gap: 8px;
+            align-items: center;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: rgba(11, 107, 86, 0.12);
+        }
+
+        .news-meta span {
+            color: #0b6b56;
+        }
+
+        .image-gallery-page .gallery-card::after {
+            display: none;
+        }
+
+        .image-gallery-page .gallery-card-content {
+            position: static;
+            opacity: 1;
+            transform: none;
+            color: #1f2f2a;
+            background: #ffffff;
+        }
+
+        .paper-meta {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px 12px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #0b6b56;
+            background: rgba(11, 107, 86, 0.08);
+            border-radius: 10px;
+            padding: 10px 12px;
+            margin-bottom: 10px;
+        }
+
+        .paper-meta .paper-date {
+            color: #4f6b62;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+
+        #newsImageModal .modal-dialog {
+            max-width: 96vw;
+            width: auto;
+            margin: 0 auto;
+            align-items: flex-start;
+        }
+
+        #newsImageModal {
+            padding: 0 !important;
+        }
+
+        #newsImageModal .modal-dialog {
+            top: 0;
+            position: fixed;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        @media (min-width: 768px) {
+            #newsImageModal .modal-dialog {
+                top: 20px;
+            }
+        }
+
+        #newsImageModal .modal-content {
+            background: transparent;
+            border: 0;
+            border-radius: 0;
+            position: relative;
+            box-shadow: none;
+        }
+
+        #newsImageModal .modal-header {
+            padding: 0;
+            border: 0;
+            min-height: 0;
+        }
+
+        #newsImageModal .modal-title {
+            display: none;
+        }
+
+        #newsImageModal .btn-close.news-modal-close {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            z-index: 3;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 50%;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        #newsImageModal .modal-body {
+            padding: 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            background: transparent;
+        }
+
+        #newsImageModal .news-modal-figure {
+            position: relative;
+            display: inline-block;
+        }
+
+        #newsImageModal .modal-body img {
+            width: auto;
             height: auto;
-            max-height: 70vh;
+            max-width: 98vw;
+            max-height: 90vh;
             object-fit: contain;
         }
 
-        .news-lightbox-close {
-            position: absolute;
-            top: 10px;
-            right: 12px;
-            border: none;
-            background: transparent;
-            font-size: 24px;
-            line-height: 1;
-            cursor: pointer;
+        @media (min-width: 1400px) {
+            #newsImageModal .modal-dialog {
+                max-width: 96vw;
+            }
         }
 
-        .news-image-trigger {
-            cursor: pointer;
+        @media (max-width: 768px) {
+            #newsImageModal .modal-dialog {
+                margin: 0.5rem;
+                max-width: 98vw;
+            }
+
+            #newsImageModal .modal-body img {
+                max-height: 85vh;
+            }
+
+            .gallery-card img {
+                height: auto;
+            }
         }
     </style>
+    <!-- RTL CSS::When Need RTL Uncomments File -->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/rtl.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -358,6 +290,9 @@
                                                             Press</a></li>
                                                 </ul>
                                             </li>
+                                            <li class="single-list d-lg-none">
+                                                <a class="single" href="news-media.html">News &amp; Press</a>
+                                            </li>
                                             <li class="single-list"><a class="single" href="contact-us.html">Contact</a>
                                             </li>
                                         </ul>
@@ -399,15 +334,6 @@
                 </div>
             </div>
         </section>
-
-        <div class="news-lightbox" id="newsLightbox" aria-hidden="true">
-            <div class="news-lightbox-inner" role="dialog" aria-modal="true" aria-labelledby="newsLightboxTitle">
-                <button class="news-lightbox-close" type="button" aria-label="Close">&times;</button>
-                <h5 class="news-lightbox-title" id="newsLightboxTitle">News Image</h5>
-                <img class="news-lightbox-image" id="newsLightboxImage" src="assets/images/gallery/paper1.jpg"
-                    alt="News image preview" />
-            </div>
-        </div>
         <!-- End-of Breadcrumb Area -->
 
         <section class="image-gallery-page section-padding">
@@ -416,140 +342,165 @@
                     <div class="col-lg-7">
                         <div class="section-tittle">
                             <span class="sub-tittle text-capitalize font-600">Media Highlights</span>
-                            <h2 class="title font-700">Coverage, press releases, and stories from our community work</h2>
+                            <h2 class="title font-700">Newspaper features and public updates</h2>
                         </div>
                     </div>
                 </div>
                 <div class="gallery-masonry">
                     <article class="gallery-card">
-                        <button class="news-image-trigger" type="button" data-image="assets/images/gallery/paper1.jpg"
-                            data-title="Community health camp reaches 1,200 residents"
-                            style="border: none; padding: 0; background: transparent; width: 100%; text-align: left;">
+                        <button class="news-trigger" type="button" data-image="assets/images/gallery/paper1.jpg"
+                            data-title="Community health camp reaches 1,200 residents">
                             <img alt="Press briefing" src="assets/images/gallery/paper1.jpg" />
                         </button>
                         <div class="gallery-card-content">
-                            <h3>Community health camp reaches 1,200 residents</h3>
+                            <div class="paper-meta">
+                                <span class="paper-name">Community health camp reaches 1,200 residents</span>
+                                <span class="paper-date">12 Jan 2026</span>
+                            </div>
                             <p>Local clinics partner with Sarba Shakti for weekend screenings.</p>
                         </div>
                     </article>
                     <article class="gallery-card">
-                        <button class="news-image-trigger" type="button" data-image="assets/images/gallery/paper2.jpg"
-                            data-title="District daily highlights after-school learning labs"
-                            style="border: none; padding: 0; background: transparent; width: 100%; text-align: left;">
+                        <button class="news-trigger" type="button" data-image="assets/images/gallery/paper2.jpg"
+                            data-title="District daily highlights after-school learning labs">
                             <img alt="Education partnership news" src="assets/images/gallery/paper2.jpg" />
                         </button>
                         <div class="gallery-card-content">
-                            <h3>District daily highlights after-school learning labs</h3>
+                            <div class="paper-meta">
+                                <span class="paper-name">District daily highlights after-school learning labs</span>
+                                <span class="paper-date">28 Jan 2026</span>
+                            </div>
                             <p>Students share how the program improves attendance and confidence.</p>
                         </div>
                     </article>
                     <article class="gallery-card">
-                        <button class="news-image-trigger" type="button" data-image="assets/images/gallery/paper3.jpg"
-                            data-title="Volunteer leaders recognized for service excellence"
-                            style="border: none; padding: 0; background: transparent; width: 100%; text-align: left;">
+                        <button class="news-trigger" type="button" data-image="assets/images/gallery/paper3.jpg"
+                            data-title="Volunteer leaders recognized for service excellence">
                             <img alt="Volunteer spotlight" src="assets/images/gallery/paper3.jpg" />
                         </button>
                         <div class="gallery-card-content">
-                            <h3>Volunteer leaders recognized for service excellence</h3>
+                            <div class="paper-meta">
+                                <span class="paper-name">Volunteer leaders recognized for service excellence</span>
+                                <span class="paper-date">09 Feb 2026</span>
+                            </div>
                             <p>Stories of mentorship and neighborhood leadership.</p>
                         </div>
                     </article>
                     <article class="gallery-card">
-                        <button class="news-image-trigger" type="button" data-image="assets/images/gallery/paper4.jpg"
-                            data-title="New mobile clinic route expands to rural blocks"
-                            style="border: none; padding: 0; background: transparent; width: 100%; text-align: left;">
+                        <button class="news-trigger" type="button" data-image="assets/images/gallery/paper4.jpg"
+                            data-title="New mobile clinic route expands to rural blocks">
                             <img alt="Program launch announcement" src="assets/images/gallery/paper4.jpg" />
                         </button>
                         <div class="gallery-card-content">
-                            <h3>New mobile clinic route expands to rural blocks</h3>
+                            <div class="paper-meta">
+                                <span class="paper-name">New mobile clinic route expands to rural blocks</span>
+                                <span class="paper-date">22 Feb 2026</span>
+                            </div>
                             <p>Weekly schedules published with updated service points.</p>
                         </div>
                     </article>
+                    
                     <article class="gallery-card">
-                        <button class="news-image-trigger" type="button" data-image="assets/images/gallery/paper1.jpg"
-                            data-title="Youth digital literacy drive earns regional award"
-                            style="border: none; padding: 0; background: transparent; width: 100%; text-align: left;">
+                        <button class="news-trigger" type="button" data-image="assets/images/gallery/paper1.jpg"
+                            data-title="Youth digital literacy drive earns regional award">
                             <img alt="Youth program coverage" src="assets/images/gallery/paper1.jpg" />
                         </button>
                         <div class="gallery-card-content">
-                            <h3>Youth digital literacy drive earns regional award</h3>
+                            <div class="paper-meta">
+                                <span class="paper-name">Youth digital literacy drive earns regional award</span>
+                                <span class="paper-date">03 Mar 2026</span>
+                            </div>
                             <p>Highlighting student projects and community mentors.</p>
                         </div>
                     </article>
                     <article class="gallery-card">
-                        <button class="news-image-trigger" type="button" data-image="assets/images/gallery/paper2.jpg"
-                            data-title="Relief supplies delivered to 15 villages"
-                            style="border: none; padding: 0; background: transparent; width: 100%; text-align: left;">
+                        <button class="news-trigger" type="button" data-image="assets/images/gallery/paper2.jpg"
+                            data-title="Relief supplies delivered to 15 villages">
                             <img alt="Relief update" src="assets/images/gallery/paper2.jpg" />
                         </button>
                         <div class="gallery-card-content">
-                            <h3>Relief supplies delivered to 15 villages</h3>
+                            <div class="paper-meta">
+                                <span class="paper-name">Relief supplies delivered to 15 villages</span>
+                                <span class="paper-date">18 Mar 2026</span>
+                            </div>
                             <p>Emergency response teams supported by local donors.</p>
                         </div>
                     </article>
                     <article class="gallery-card">
-                        <button class="news-image-trigger" type="button" data-image="assets/images/gallery/paper3.jpg"
-                            data-title="Women leaders forum hosted with civic partners"
-                            style="border: none; padding: 0; background: transparent; width: 100%; text-align: left;">
+                        <button class="news-trigger" type="button" data-image="assets/images/gallery/paper3.jpg"
+                            data-title="Women leaders forum hosted with civic partners">
                             <img alt="Women leadership program" src="assets/images/gallery/paper3.jpg" />
                         </button>
                         <div class="gallery-card-content">
-                            <h3>Women leaders forum hosted with civic partners</h3>
+                            <div class="paper-meta">
+                                <span class="paper-name">Women leaders forum hosted with civic partners</span>
+                                <span class="paper-date">25 Mar 2026</span>
+                            </div>
                             <p>Focus on safety, livelihoods, and community action.</p>
                         </div>
                     </article>
                     <article class="gallery-card">
-                        <button class="news-image-trigger" type="button" data-image="assets/images/gallery/paper4.jpg"
-                            data-title="Community safety training expands to 9 new wards"
-                            style="border: none; padding: 0; background: transparent; width: 100%; text-align: left;">
+                        <button class="news-trigger" type="button" data-image="assets/images/gallery/paper4.jpg"
+                            data-title="Community safety training expands to 9 new wards">
                             <img alt="Safety training report" src="assets/images/gallery/paper4.jpg" />
                         </button>
                         <div class="gallery-card-content">
-                            <h3>Community safety training expands to 9 new wards</h3>
+                            <div class="paper-meta">
+                                <span class="paper-name">Community safety training expands to 9 new wards</span>
+                                <span class="paper-date">02 Apr 2026</span>
+                            </div>
                             <p>Preparedness drills and first-aid workshops announced.</p>
                         </div>
                     </article>
                     <article class="gallery-card">
-                        <button class="news-image-trigger" type="button" data-image="assets/images/gallery/paper1.jpg"
-                            data-title="CSR partner joins year-long education initiative"
-                            style="border: none; padding: 0; background: transparent; width: 100%; text-align: left;">
+                        <button class="news-trigger" type="button" data-image="assets/images/gallery/paper1.jpg"
+                            data-title="CSR partner joins year-long education initiative">
                             <img alt="Partner announcement" src="assets/images/gallery/paper1.jpg" />
                         </button>
                         <div class="gallery-card-content">
-                            <h3>CSR partner joins year-long education initiative</h3>
+                            <div class="paper-meta">
+                                <span class="paper-name">CSR partner joins year-long education initiative</span>
+                                <span class="paper-date">15 Apr 2026</span>
+                            </div>
                             <p>Supporting scholarships and learning materials.</p>
                         </div>
                     </article>
                     <article class="gallery-card">
-                        <button class="news-image-trigger" type="button" data-image="assets/images/gallery/paper2.jpg"
-                            data-title="Local newspaper spotlights youth engagement program"
-                            style="border: none; padding: 0; background: transparent; width: 100%; text-align: left;">
+                        <button class="news-trigger" type="button" data-image="assets/images/gallery/paper2.jpg"
+                            data-title="Local newspaper spotlights youth engagement program">
                             <img alt="Press feature on youth" src="assets/images/gallery/paper2.jpg" />
                         </button>
                         <div class="gallery-card-content">
-                            <h3>Local newspaper spotlights youth engagement program</h3>
+                            <div class="paper-meta">
+                                <span class="paper-name">Local newspaper spotlights youth engagement program</span>
+                                <span class="paper-date">28 Apr 2026</span>
+                            </div>
                             <p>Creative learning sessions foster peer-led leadership.</p>
                         </div>
                     </article>
                     <article class="gallery-card">
-                        <button class="news-image-trigger" type="button" data-image="assets/images/gallery/paper3.jpg"
-                            data-title="Mentor network expands for career guidance"
-                            style="border: none; padding: 0; background: transparent; width: 100%; text-align: left;">
+                        <button class="news-trigger" type="button" data-image="assets/images/gallery/paper3.jpg"
+                            data-title="Mentor network expands for career guidance">
                             <img alt="Mentor program update" src="assets/images/gallery/paper3.jpg" />
                         </button>
                         <div class="gallery-card-content">
-                            <h3>Mentor network expands for career guidance</h3>
+                            <div class="paper-meta">
+                                <span class="paper-name">Mentor network expands for career guidance</span>
+                                <span class="paper-date">09 May 2026</span>
+                            </div>
                             <p>Professionals volunteer for monthly coaching clinics.</p>
                         </div>
                     </article>
                     <article class="gallery-card">
-                        <button class="news-image-trigger" type="button" data-image="assets/images/gallery/paper4.jpg"
-                            data-title="Community celebration marks program milestone"
-                            style="border: none; padding: 0; background: transparent; width: 100%; text-align: left;">
+                        <button class="news-trigger" type="button" data-image="assets/images/gallery/paper4.jpg"
+                            data-title="Community celebration marks program milestone">
                             <img alt="Community celebration media" src="assets/images/gallery/paper4.jpg" />
                         </button>
                         <div class="gallery-card-content">
-                            <h3>Community celebration marks program milestone</h3>
+                            <div class="paper-meta">
+                                <span class="paper-name">Community celebration marks program milestone</span>
+                                <span class="paper-date">21 May 2026</span>
+                            </div>
                             <p>Media gallery from the annual community gathering.</p>
                         </div>
                     </article>
@@ -570,6 +521,24 @@
                 </div>
             </div>
         </section>
+
+        <div class="modal fade" id="newsImageModal" tabindex="-1" aria-labelledby="newsImageLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title" id="newsImageLabel">News Image</h5>
+                    </div>
+                    <div class="modal-body pt-0">
+                        <div class="news-modal-figure">
+                            <button type="button" class="btn-close news-modal-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            <img id="newsModalImage" src="assets/images/gallery/paper1.jpg" alt="News image preview"
+                                style="width: 100%; height: auto;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- Footer S t a r t -->
     <footer>
@@ -614,84 +583,57 @@
     </div>
     <!-- Add an overlay element -->
     <div class="overlay"></div>
+    <!-- jquery-->
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap-5.3.0.min.js"></script>
     <!-- Plugin -->
     <script src="assets/js/plugin.js"></script>
+    <script src="assets/js/news-media.js"></script>
     <script>
         (function () {
-            var lightbox = document.getElementById("newsLightbox");
-            var image = document.getElementById("newsLightboxImage");
-            var title = document.getElementById("newsLightboxTitle");
-            if (!lightbox || !image) {
+            if (!window.jQuery || !window.bootstrap) {
                 return;
             }
-
-            var closeButton = lightbox.querySelector(".news-lightbox-close");
-
-            function openLightbox(src, heading) {
-                if (src) {
-                    image.src = src;
-                }
-                if (title) {
-                    title.textContent = heading || "";
-                }
-                lightbox.classList.add("open");
-                lightbox.setAttribute("aria-hidden", "false");
-                document.body.style.overflow = "hidden";
+            var modalEl = document.getElementById("newsImageModal");
+            var image = document.getElementById("newsModalImage");
+            var title = document.getElementById("newsImageLabel");
+            if (!modalEl || !image) {
+                return;
             }
-
-            function closeLightbox() {
-                lightbox.classList.remove("open");
-                lightbox.setAttribute("aria-hidden", "true");
-                document.body.style.overflow = "";
-            }
+            var modalInstance = window.bootstrap.Modal.getOrCreateInstance(modalEl);
 
             document.addEventListener("click", function (event) {
-                var trigger = event.target.closest(".news-image-trigger");
+                var trigger = event.target.closest(".news-trigger");
                 if (!trigger) {
                     return;
                 }
                 event.preventDefault();
-                openLightbox(
-                    trigger.getAttribute("data-image"),
-                    trigger.getAttribute("data-title")
-                );
-            });
-
-            if (closeButton) {
-                closeButton.addEventListener("click", closeLightbox);
-            }
-
-            lightbox.addEventListener("click", function (event) {
-                if (event.target === lightbox) {
-                    closeLightbox();
+                var src = trigger.getAttribute("data-image") || "";
+                var heading = trigger.getAttribute("data-title") || "";
+                if (src) {
+                    image.src = src;
                 }
+                if (title && heading) {
+                    title.textContent = heading;
+                }
+                modalInstance.show();
             });
 
-            document.addEventListener("keydown", function (event) {
-                if (event.key === "Escape") {
-                    closeLightbox();
+            modalEl.addEventListener("click", function (event) {
+                if (!event.target.closest(".news-modal-figure")) {
+                    modalInstance.hide();
                 }
             });
         })();
     </script>
-    <!-- Preloader Fallback -->
+    <!-- Main js-->
     <script>
-        (function () {
-            function hidePreloader() {
-                var preloader = document.getElementById("preloader-active");
-                if (preloader) {
-                    preloader.classList.add("preloader-hidden");
-                }
-            }
-
-            if (document.readyState === "complete") {
-                hidePreloader();
-            } else {
-                window.addEventListener("load", hidePreloader);
-                setTimeout(hidePreloader, 2500);
-            }
-        })();
+        if (typeof window.jQuery === "function") {
+            window.$ = window.jQuery;
+        }
     </script>
+    <script src="assets/js/main.js?v=20260311"></script>
     <!-- Back To Top Fallback -->
     <script>
         (function () {
