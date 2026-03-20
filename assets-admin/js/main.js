@@ -631,5 +631,10 @@
     $(document).on('click', '.sidebar-icon', function () {
         $('.panel-sidebar-close, .sidebar-users-dashboard, .sidebar-body-overlay').addClass('active');
     });
+    $(document).on('click', '.sidebar-users-dashboard-list .has-children > .single', function (e) {
+        e.preventDefault();
+        const $parent = $(this).parent('.has-children');
+        $parent.toggleClass('open show');
+    });
 
 })(jQuery);

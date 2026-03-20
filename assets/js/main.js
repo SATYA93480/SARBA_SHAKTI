@@ -429,9 +429,35 @@
                     prependTo: ".mobile_menu",
                     closedSymbol: "+",
                     openedSymbol: "-",
+                    closeOnClick: true,
+                    allowParentLinks: false,
+                    nestedParentLinks: true,
                 });
                 slickNavInitialized = true;
             }
+        }
+    });
+
+    function closeMobileMenu() {
+        var btn = $(".slicknav_btn");
+        var nav = $(".slicknav_nav");
+        if (btn.hasClass("slicknav_open")) {
+            btn.removeClass("slicknav_open").addClass("slicknav_collapsed");
+            nav.slideUp(200);
+        }
+    }
+
+    $(document).on("click", ".slicknav_nav a", function () {
+        var href = $(this).attr("href") || "";
+        if (href && href !== "#" && href !== "javascript:void(0)") {
+            closeMobileMenu();
+        }
+    });
+
+    $(document).on("click", ".slicknav_menu", function (event) {
+        var isBackdropClick = $(event.target).is(".slicknav_menu");
+        if (isBackdropClick) {
+            closeMobileMenu();
         }
     });
 
